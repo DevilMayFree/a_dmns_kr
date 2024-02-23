@@ -1,0 +1,150 @@
+﻿@charset "utf-8";
+
+
+
+body, input, button, select, textarea {font-family:"Noto Sans Korean", "RobotoDraft", "Dotum", Sans-serif !important;}
+a:hover, a:active, a:focus {text-decoration:none;}
+
+
+
+/* 연혁 관련 스타일 */
+.history-default {width:100%; position:relative;}
+.history-default .title {display:block; width:100%; text-align:center; font-size:30px; line-height:30px; font-weight:bold;}
+.history-default .items {width:100%; position:relative; padding:80px 0 20px; margin:30px auto 0; overflow:hidden;}
+.history-default .items:before {display:block; content:''; width:1px; height:100%; position:absolute; top:0; left:50%; background:#000;}
+.history-default .history-item {position:relative; width:calc(50% - 30px); padding:20px 30px; box-sizing:border-box; border:2px solid #d4d4d4; border-radius:10px; margin:0; margin-bottom:60px;
+  transition:all 0.5s ease;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+  -ms-transition:all 0.5s ease;
+}
+.history-default .history-item:before {display:block; content:''; width:15px; height:15px; border-radius:50%; background:#000; position:absolute; top:20px;}
+.history-default .history-item.right:before {left:-39.5px;}
+.history-default .history-item.left:before {right:-39.5px;}
+
+.history-default .history-item:after {display:block; content:''; width:15px; height:28px; background:#fff; position:absolute; top:14px; background-position:center center;}
+.history-default .history-item.right:after {left:-15px; background-image:url('../../images/history_arrow_left_d4d4d4.png');}
+.history-default .history-item.left:after {right:-15px; background-image:url('../../images/history_arrow_right_d4d4d4.png');}
+
+.history-default .history-item.right {float:right;}
+.history-default .history-item.left {float:left;}
+.history-default .history-item:nth-child(even) {margin-top:60px;}
+
+.history-default .history-item p {display:block; text-align:left; margin:0;}
+.history-default .history-item .year {font-size:20px; line-height:20px; font-weight:bold; margin-bottom:15px;}
+.history-default .history-item .desc {font-size:15px; line-height:30px;}
+
+
+
+/* 복합 검색 영역 관련 CSS */
+#multiSearchWrap {width:100%; position:relative; margin:0 auto 30px; padding:0; background:#fff; border:0; border-radius:0; overflow:hidden;}
+#multiSearchWrap .searchInp {width:280px; height:36px; float:right; background:#f0f0f0; overflow:hidden;}
+#multiSearchWrap .searchInp input[type="text"] {display:block; float:left; width:244px; height:36px; line-height:36px; font-size:15px; padding:0 10px; box-sizing:border-box; background:none; border:0;}
+#multiSearchWrap .searchInp a {display:block; width:36px; height:36px; float:right; text-align:center;}
+#multiSearchWrap .searchInp a i {line-height:36px; vertical-align:middle; color:#333;}
+#multiSearchWrap .s-ele {display:none !important;}
+#multiSearchWrap .s-ele.active {display:block !important;}
+
+
+
+/* 헤더 영역 :: S */
+.headerWrap {width:100%; position:fixed; top:0; left:0; z-index:100;}
+.headerWrap .header {width:100%; padding:50px; position:relative; box-sizing:border-box; background:rgba(0,0,0,0);}
+.headerWrap.fixed .header {padding:20px 50px; background:rgba(0,0,0,0.5);}
+.headerWrap .header .inner {width:100%; height:100%; position:relative;}
+.headerWrap .header img {vertical-align:top;}
+
+.headerWrap .header .logoBtn {display:block; width:188px; height:51px; position:relative;}
+.headerWrap .header .logoBtn img {width:100%;}
+
+.headerWrap .header .hamburgerBtn {display:block; width:41px; height:30px; position:absolute; top:50%; right:0; margin:-15px 0 0 0;}
+.headerWrap .header .hamburgerBtn img {width:100%;}
+
+.headerWrap .header .gnbWrap {width:320px; height:100%; position:fixed; top:0; right:-325px; margin:0; padding:120px 0 0 0; box-sizing:border-box; background:rgba(8,61,93,0.85); z-index:105;}
+.headerWrap .header .gnbWrap.active {right:0;}
+
+.headerWrap .header .gnbWrap .closeBtn {display:block; width:30px; height:30px; position:absolute; top:60px; right:55px;}
+.headerWrap .header .gnbWrap .closeBtn img {width:100%;}
+
+.headerWrap .header .gnbWrap > ul {display:block; width:100%; height:100%; position:relative; margin:0; padding:0 40px; box-sizing:border-box;}
+.headerWrap .header .gnbWrap .dep1 {display:block; width:100%; position:relative; margin:0 auto 40px; padding:0; text-align:left;}
+.headerWrap .header .gnbWrap .dep1:last-child {margin:0 auto;}
+.headerWrap .header .gnbWrap .dep1_btn {display:inline-block; font-size:20px; line-height:20px; font-weight:600; color:#888; text-transform:uppercase; margin:0; padding:0;}
+.headerWrap .header .gnbWrap .dep1_btn:hover,
+.headerWrap .header .gnbWrap .dep1_btn.active {color:#fff;}
+
+.headerWrap .header .gnbWrap .dep1.lang {margin:0 auto 30px; padding:0 0 30px 0; border-bottom:1px solid #999;}
+.headerWrap .header .gnbWrap .dep1.lang a {display:inline-block; font-size:20px; line-height:20px; font-weight:600; color:#888; text-transform:uppercase; margin:0 15px 0 0;}
+.headerWrap .header .gnbWrap .dep1.lang a:last-child {margin:0;}
+.headerWrap .header .gnbWrap .dep1.lang a:hover,
+.headerWrap .header .gnbWrap .dep1.lang a.active {color:#fff;}
+
+
+@media screen and (max-width:1024px){
+  .headerWrap .header {padding:30px;}
+  .headerWrap.fixed .header {padding:20px 30px;}
+
+  .headerWrap .header .gnbWrap .closeBtn {top:40px; right:35px;}
+}
+
+@media screen and (max-width:768px){
+  .headerWrap .header {padding:20px 30px;}
+  .headerWrap.fixed .header {padding:15px 30px;}
+  .headerWrap .header .logoBtn {width:94px; height:26px;}
+  .headerWrap .header .hamburgerBtn {width:21px; height:15px; margin:-7.5px 0 0 0;}
+
+  .headerWrap .header .gnbWrap {padding:60px 0 0 0;}
+  .headerWrap .header .gnbWrap .closeBtn {width:15px; height:15px; top:25px; right:30px;}
+  .headerWrap .header .gnbWrap .dep1 {margin:0 auto 20px;}
+  .headerWrap .header .gnbWrap .dep1_btn {font-size:18px;}
+
+  .headerWrap .header .gnbWrap .dep1.lang {margin:0 auto 20px; padding:0 0 20px 0;}
+  .headerWrap .header .gnbWrap .dep1.lang a {font-size:16px;}
+}
+/* 헤더 영역 :: E */
+
+
+
+/* 푸터 영역 :: S */
+.footerWrap {width:100%; padding:30px 15px; position:relative; /* background:#083d5d; */ background:rgba(0,0,0,0.5); box-sizing:border-box; margin:100px auto 0;}
+.footerWrap .footer {width:100%; position:relative;}
+.footerWrap .footer p {display:block; text-align:center; position:relative; margin:0; font-size:13px; line-height:24px; font-weight:300; color:#fff;}
+.footerWrap .footer .copyright {font-size:12px; color:#aaa; margin:5px auto 0;}
+
+
+/*
+.rightQuick {width:12px; height:auto; position:fixed; top:50%; right:12px; z-index:50; margin:0; padding:0;}
+.rightQuick ul {display:block; width:100%; position:relative; margin:0; padding:0;}
+.rightQuick ul li {display:block; width:12px; height:12px; position:relative; margin:0 auto 10px;}
+.rightQuick ul li a {display:block; width:12px; height:12px; position:relative; margin:0; padding:0; border-radius:50%; box-sizing:border-box; background:transparent; border:2px solid #000; opacity:0.7;}
+.rightQuick ul li a:last-child {margin:0 auto;}
+.rightQuick ul li a span {display:none; width:85px; height:24px; text-align:center; line-height:24px; font-size:13px; letter-spacing:-0.5px; font-weight:400; color:#454545; background:#fff; border-radius:3px; border:1px solid #000; position:absolute; top:50%; left:-95px; margin:-12px 0 0 0;}
+.rightQuick ul li a span {display:block; }
+.rightQuick ul li a.active {background:#000; opacity:1;}
+.rightQuick ul li a.active span {display:block;}
+.rightQuick.white ul li a {border:2px solid #fff;}
+.rightQuick.white ul li a.active {background:#fff;}
+*/
+.rightQuick {width:20px; height:100%; position:fixed; top:0; right:0; z-index:50; margin:0; padding:0;}
+.rightQuick ul {display:inline-block; width:100%; height:20px; position:relative; margin:0; padding:0; transform:rotate(90deg); text-align:center; top:50%; right:0;}
+.rightQuick ul li {display:inline-block; width:auto; height:20px; position:relative; margin:0 12px 0 0; padding:0 12px 0 0; text-align:center;}
+.rightQuick ul li:after {display:block; content:'|'; width:12px; height:12px; font-size:12px; text-align:center; line-height:12px; position:absolute; top:50%; right:-6px; margin:-6px 0 0 0;}
+.rightQuick ul li:last-child {margin:0; padding:0;}
+.rightQuick ul li:last-child:after {display:none;}
+.rightQuick ul li a {display:block; width:100%; height:100%; position:relative; margin:0; padding:0; color:#000; font-weight:400; opacity:0.35;}
+.rightQuick ul li:last-child a:after {display:none;}
+.rightQuick ul li a span {display:block; width:100%; height:100%; font-size:12px; line-height:20px; position:relative;}
+.rightQuick ul li a.active {opacity:1;}
+.rightQuick ul li a.active span {}
+
+
+@media screen and (max-width:768px){
+  .footerWrap .footer p {font-size:12px; line-height:20px;}
+  .footerWrap .footer .copyright {font-size:11px;}
+
+  /*
+  .rightQuick ul li a span {width:20px; height:auto; padding:5px 5px; box-sizing:border-box; font-size:12px; line-height:12px; word-break:break-all !important; text-align:center; top:-5px; left:-28px; margin:0;}
+  */
+}
+/* 푸터 영역 :: E */

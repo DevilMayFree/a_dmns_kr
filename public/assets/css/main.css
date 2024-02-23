@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+
+/* 메인 최상단 배너 영역 :: S */
+.topBannerWrap {width:100%; position:relative;}
+.topBannerWrap .movie {display:block; width:100%; position:relative;}
+.topBannerWrap .typo {width:100%; height:100%; position:absolute; top:0; left:0; background:rgba(0,0,0,0.3);}
+.topBannerWrap .typo > div {width:905px; height:264px; position:absolute; top:50%; left:50%; margin:-132px 0 0 -452.5px;}
+.topBannerWrap .typo > div img {width:100%;}
+
+
+@media screen and (max-width:1024px){
+  .topBannerWrap {width:100%; height:0; padding-bottom:120%; overflow:hidden;}
+  .topBannerWrap .movie {width:auto; height:100%; position:absolute; top:0; left:-10%;}
+
+  .topBannerWrap .typo > div {width:452.5px; height:132px; margin:-66px 0 0 -226.25px;}
+}
+
+@media screen and (max-width:768px){
+  .topBannerWrap {width:100%; height:0; padding-bottom:160%; overflow:hidden;}
+  .topBannerWrap .movie {width:auto; height:100%; position:absolute; top:0; left:-30%;}
+}
+
+@media screen and (max-width:560px){
+  .topBannerWrap .typo > div {width:300px; height:88px; margin:-44px 0 0 -150px;}
+}
+/* 메인 최상단 배너 영역 :: E */

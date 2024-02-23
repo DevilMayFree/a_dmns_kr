@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+
+
+@media screen and (min-width:1601px){
+  /* br 태그 정리 */
+  .bru_1600 {display:block; width:100%; height:0px;}
+  .brd_1600 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:1441px){
+  /* br 태그 정리 */
+  .bru_1440 {display:block; width:100%; height:0px;}
+  .brd_1440 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:1201px){
+  /* br 태그 정리 */
+  .bru_1200 {display:block; width:100%; height:0px;}
+  .brd_1200 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:1025px){
+  /* br 태그 정리 */
+  .bru_1024 {display:block; width:100%; height:0px;}
+  .brd_1024 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:961px){
+  /* br 태그 정리 */
+  .bru_960 {display:block; width:100%; height:0px;}
+  .brd_960 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:769px){
+  /* br 태그 정리 */
+  .bru_768 {display:block; width:100%; height:0px;}
+  .brd_768 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:641px){
+  /* br 태그 정리 */
+  .bru_640 {display:block; width:100%; height:0px;}
+  .brd_640 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:481px){
+  /* br 태그 정리 */
+  .bru_480 {display:block; width:100%; height:0px;}
+  .brd_480 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:401px){
+  /* br 태그 정리 */
+  .bru_400 {display:block; width:100%; height:0px;}
+  .brd_400 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:361px){
+  /* br 태그 정리 */
+  .bru_360 {display:block; width:100%; height:0px;}
+  .brd_360 {display:inline; width:0; height:0;}
+}
+
+@media screen and (min-width:321px){
+  /* br 태그 정리 */
+  .bru_320 {display:block; width:100%; height:0px;}
+  .brd_320 {display:inline; width:0; height:0;}
+}
+
+
+
+
+
+@media screen and (max-width:1600px){
+  /* br 태그 정리 */
+  .bru_1600 {display:inline; width:0; height:0;}
+  .brd_1600 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:1440px){
+  /* br 태그 정리 */
+  .bru_1440 {display:inline; width:0; height:0;}
+  .brd_1440 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:1200px){
+  /* br 태그 정리 */
+  .bru_1200 {display:inline; width:0; height:0;}
+  .brd_1200 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:1024px){
+  /* br 태그 정리 */
+  .bru_1024 {display:inline; width:0; height:0;}
+  .brd_1024 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:960px){
+  /* br 태그 정리 */
+  .bru_960 {display:inline; width:0; height:0;}
+  .brd_960 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:768px){
+  /* br 태그 정리 */
+  .bru_768 {display:inline; width:0; height:0;}
+  .brd_768 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:640px){
+  /* br 태그 정리 */
+  .bru_640 {display:inline; width:0; height:0;}
+  .brd_640 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:480px){
+  /* br 태그 정리 */
+  .bru_480 {display:inline; width:0; height:0;}
+  .brd_480 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:400px){
+  /* br 태그 정리 */
+  .bru_400 {display:inline; width:0; height:0;}
+  .brd_400 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:360px){
+  /* br 태그 정리 */
+  .bru_360 {display:inline; width:0; height:0;}
+  .brd_360 {display:block; width:100%; height:0px;}
+}
+
+@media screen and (max-width:320px){
+  /* br 태그 정리 */
+  .bru_320 {display:inline; width:0; height:0;}
+  .brd_320 {display:block; width:100%; height:0px;}
+}

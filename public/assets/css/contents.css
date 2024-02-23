@@ -1,0 +1,655 @@
+﻿@charset "utf-8";
+
+
+
+/* 서브 공통 영역 :: S */
+.subCon {width:100%; position:relative; margin:0 auto 0; padding:100px 0 0 0; box-sizing:border-box;}
+.subCon .inner {width:100%; max-width:1300px; position:relative; margin:0 auto; padding:0 50px; box-sizing:border-box;}
+
+.subCon .titleArea {width:100%; position:relative;}
+.subCon .titleArea p {display:block; width:100%; text-align:left; position:relative; margin:0; color:#000;}
+.subCon .titleArea .t1 {font-size:26px; line-height:30px; font-weight:700;}
+.subCon .titleArea .t2 {font-size:16px; line-height:30px; font-weight:400; margin:20px auto 0;}
+
+
+@media screen and (max-width:1024px){
+  .subCon .inner {padding:0 30px;}
+}
+
+@media screen and (max-width:768px){
+  .subCon {padding:80px 0 0 0;}
+
+  .subCon .titleArea .t1 {font-size:22px; line-height:26px;}
+  .subCon .titleArea .t2 {font-size:14px; line-height:28px; margin:15px auto 0;}
+}
+
+@media screen and (max-width:480px){
+  .subCon {padding:60px 0 0 0;}
+
+  .subCon .titleArea .t1 {font-size:20px; line-height:24px;}
+  .subCon .titleArea .t2 {font-size:13px; line-height:26px; margin:12px auto 0;}
+}
+/* 서브 공통 영역 :: E */
+
+
+
+/* 서브 최상단 배너 영역 :: S */
+.subTopBanner {width:100%; position:relative;}
+.subTopBanner .banner {width:100%; height:558px; position:relative; background-size:cover !important;}
+
+.subTopBanner.company .banner {background:url('../../images/cm_sub_top_banner_company_2.jpg') center center no-repeat;}
+.subTopBanner.investment .banner {background:url('../../images/cm_strategy_sec_1_bg_2.jpg') center center no-repeat;}
+.subTopBanner.team .banner {background:url('../../images/cm_sub_top_banner_team_1.jpg') center center no-repeat;}
+.subTopBanner.stewardship .banner {background:url('../../images/cm_sub_top_banner_stewardship_1.jpg') center center no-repeat;}
+
+.subTopBanner .banner .typo {width:100%; position:absolute; bottom:100px; left:0;}
+.subTopBanner .banner .typo > div {width:100%; max-width:1300px; position:relative; margin:0 auto; padding:0 50px; box-sizing:border-box;}
+.subTopBanner .banner .typo p {display:block; text-align:left; position:relative; margin:0; color:#fff;}
+.subTopBanner .banner .typo .t1 {font-size:36px; line-height:36px; font-weight:700;}
+
+
+@media screen and (max-width:1600px){
+  .subTopBanner .banner {height:450px;}
+  .subTopBanner .banner .typo {bottom:60px;}
+  .subTopBanner .banner .typo .t1 {font-size:30px; line-height:30px;}
+}
+
+@media screen and (max-width:1024px){
+  .subTopBanner .banner {height:400px;}
+  .subTopBanner .banner .typo > div {padding:0 30px;}
+}
+
+@media screen and (max-width:768px){
+  .subTopBanner .banner {height:300px;}
+  .subTopBanner .banner .typo {bottom:30px;}
+  .subTopBanner .banner .typo .t1 {font-size:24px; line-height:24px;}
+}
+/* 서브 최상단 배너 영역 :: E */
+
+
+
+/* Company 페이지 관련 영역 :: S */
+.companyProfile {}
+
+.companyProfile .rects {width:100%; position:relative; margin:50px auto 0;}
+.companyProfile .rects:not(.rectSlider) ul {display:block; width:100%; position:relative; overflow:hidden; margin:0;}
+.companyProfile .rects ul {padding:0;}
+.companyProfile .rects:not(.rectSlider) ul li {display:block; float:left; width:calc(25% - 15px); margin:0 20px 20px 0;}
+.companyProfile .rects-bank:not(.rectSlider) ul li {display:block; float:left; width:calc(33% - 15px); margin:0;}
+.companyProfile .rects ul li {padding:40px 10px; text-align:center; box-sizing:border-box; position:relative; background:#fff; border:1px solid #cfcfcf;}
+.companyProfile .rects:not(.rectSlider) ul li:nth-of-type(4n+4) {margin:0 0 20px 0;}
+.companyProfile .rects ul li > * {display:block; text-align:center; position:relative; margin:0 auto; padding:0;
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+}
+.companyProfile .rects ul li img {max-width:100%;}
+.companyProfile .rects ul li p {}
+.companyProfile .rects ul li .t1 {font-size:26px; line-height:26px; font-weight:700; color:#083d5d; margin:30px auto 15px; padding:0 0 15px 0;}
+.companyProfile .rects ul li .t1:after {display:block; content:''; width:30px; height:1px; background:#083d5d; position:absolute; bottom:0; left:50%; margin:0 0 0 -15px;}
+.companyProfile .rects ul li .t2 {font-size:16px; line-height:16px; font-weight:400; color:#555;}
+
+.companyProfile .rects:not(.rectSlider) ul li:hover {background:#083d5d; border:1px solid #083d5d;}
+.companyProfile .rects:not(.rectSlider) ul li:hover .t1 {color:#fff;}
+.companyProfile .rects:not(.rectSlider) ul li:hover .t1:after {background:#fff;}
+.companyProfile .rects:not(.rectSlider) ul li:hover .t2 {color:#aaa;}
+
+.companyProfile .rectSlider {overflow:hidden; position:absolute; top:-9999em; left:-9999em;}
+.companyProfile .rectSlider .swiper-arrow {width:15px; height:30px; position:absolute; top:50%; margin-top:-15px; background-size:cover !important;}
+.companyProfile .rectSlider .swiper-arrow:after {display:none;}
+.companyProfile .rectSlider .swiper-button-prev {background:url('../../images/history_arrow_left_000.png') center center no-repeat; left:10px;}
+.companyProfile .rectSlider .swiper-button-next {background:url('../../images/history_arrow_right_000.png') center center no-repeat; right:10px;}
+
+
+.companyHistory {}
+.companyHistory .histories {width:100%; position:relative; overflow:hidden; margin:50px auto 0;}
+.companyHistory .histories dl {display:block; float:left; width:50%; min-height:150px; position:relative; margin:0; padding:0 10% 0 0; box-sizing:border-box;}
+.companyHistory .histories dl dt,
+.companyHistory .histories dl dd {display:block; width:100%; position:relative; margin:0; padding:0; text-align:left;}
+.companyHistory .histories dl dt {font-size:20px; line-height:30px; font-weight:700; color:#083d5d; border-bottom:1px solid #083d5d;}
+.companyHistory .histories dl dd {margin:20px auto 0;}
+.companyHistory .histories dl dd p {display:block; width:100%; position:relative; font-size:15px; line-height:22px; font-weight:400; color:#606060; margin:0 auto 10px; padding:0 0 0 40px; box-sizing:border-box;}
+.companyHistory .histories dl dd p:last-child {margin:0 auto;}
+.companyHistory .histories dl dd p span {display:block; width:40px; height:22px; line-height:22px; font-size:14px; font-weight:500; color:#083d5d; position:absolute; top:0; left:0;}
+
+
+.companyNotice {}
+.companyNotice .noticeList {width:100%; position:relative; margin:50px auto 0;}
+.companyNotice .noticeList > ul {display:block; width:100%; position:relative; margin:0; padding:0; border-top:1px solid #c0c0c0;}
+.companyNotice .noticeList > ul li {display:block; width:100%; position:relative; margin:0; padding:20px 0; box-sizing:border-box; border-bottom:1px solid #c0c0c0;}
+.companyNotice .noticeList > ul li:last-child {border-bottom:2px solid #ccc;}
+.companyNotice .noticeList > ul li .area {width:100%; position:relative; overflow:hidden; margin:0; padding:0;}
+.companyNotice .noticeList > ul li .area p,
+.companyNotice .noticeList > ul li .area a {display:block; position:relative; margin:0; padding:0; box-sizing:border-box;}
+.companyNotice .noticeList > ul li .area .num {width:120px; float:left; font-size:22px; line-height:22px; height:22px; border-right:1px solid #000; font-weight:600; color:#083d5d; text-align:center;}
+.companyNotice .noticeList > ul li .area .title {width:calc(100% - 120px); float:left; padding:0 0 0 30px; font-size:16px; line-height:22px; max-height:44px; overflow:hidden; font-weight:500; color:#000;}
+.companyNotice .noticeList > ul li .area .title:after {display:block; content:''; width:16px; height:8.5px; background-size:cover !important; background:url('../../images/cm_arrow_blue_1_down.gif') center center no-repeat; position:absolute; top:50%; right:30px; margin:-4.25px 0 0 0;}
+.companyNotice .noticeList > ul li.open .area .title:after {background:url('../../images/cm_arrow_blue_1_up.gif') center center no-repeat;}
+.companyNotice .noticeList > ul li .area.bottom {height:0; padding:0 0 0 150px; overflow:hidden;}
+.companyNotice .noticeList > ul li.open .area.bottom {height:auto; padding:30px 0 0 150px;}
+.companyNotice .noticeList > ul li .area .media {font-size:17px; line-height:20px; font-weight:400; color:#606060;}
+.companyNotice .noticeList > ul li .area .link {font-size:17px; line-height:20px; font-weight:400; color:#000; margin:10px auto 0;}
+
+
+.companyLocation {}
+.companyLocation .titleArea {}
+.companyLocation .titleArea .t1 {width:auto; display:inline-block; vertical-align:bottom;}
+.companyLocation .titleArea .category-tab {width:auto; display:inline-block; vertical-align:middle;}
+.companyLocation .titleArea .category-tab a {display:inline-block; font-size:14px; height:30px; line-height:30px; font-weight:500; color:#606060; position:relative; margin:0 0 0 30px;}
+.companyLocation .titleArea .category-tab a.active {color:#000;}
+.companyLocation .titleArea .category-tab a.active:before {display:block; content:''; width:4px; height:4px; background:#000; border-radius:50%; position:absolute; top:0; left:50%; margin:0 0 0 -2px;}
+
+.companyLocation .mapArea {width:100%; position:relative; margin:50px auto 0;}
+.companyLocation .mapArea .cons {}
+.companyLocation .mapArea .cons .map {width:100%; height:0; position:relative; overflow:hidden; padding-bottom:60%; z-index:3;}
+.companyLocation .mapArea .cons .map .link {display:block; width:100%; height:100%; position:absolute; top:0; left:0; z-index:5;}
+.companyLocation .mapArea .cons .map > div {z-index:3;}
+.companyLocation .mapArea .cons .map iframe {display:block; width:100%; height:100%; position:absolute; top:0; left:0; border:0;}
+.companyLocation .mapArea .cons .info {width:40%; height:0; padding-bottom:30%; overflow:hidden; position:absolute; top:50%; right:0; margin:-15% 0 0 0; background:rgba(0,0,0,0.6); z-index:5;}
+.companyLocation .mapArea .cons .info > div {width:100%; height:100%; position:absolute; top:0; left:0;}
+.companyLocation .mapArea .cons .info .disT {width:100%; height:100%;}
+.companyLocation .mapArea .cons .info .disTC {width:100%; height:100%; vertical-align:middle; text-align:left; padding:0 60px; box-sizing:border-box;}
+.companyLocation .mapArea .cons .info p {display:block; text-align:left; position:relative; margin:0; padding:0; color:#fff;}
+.companyLocation .mapArea .cons .info .t1 {font-size:16px; line-height:20px; font-weight:500;}
+.companyLocation .mapArea .cons .info .t2 {font-size:34px; line-height:40px; font-weight:700; margin:20px auto 10px;}
+.companyLocation .mapArea .cons .info .t3 {font-size:16px; line-height:20px; font-weight:400; margin:0 auto 20px; padding:0 0 20px 0; border-bottom:1px solid #fff;}
+.companyLocation .mapArea .cons .info .t4 {font-size:15px; line-height:20px; font-weight:400; margin:20px auto 0;}
+.companyLocation .mapArea .cons .info .t5 {font-size:15px; line-height:20px; font-weight:400; margin:10px auto 0;}
+.companyLocation .mapArea .cons .info .t6 {font-size:15px; line-height:20px; font-weight:400; margin:10px auto 0;}
+
+
+@media screen and (max-width:960px){
+  .companyProfile .rects {margin:30px auto 0;}
+  .companyProfile .rects ul li .t1 {font-size:20px; line-height:20px; margin:20px auto 15px; padding:0 0 15px 0;}
+  .companyProfile .rects ul li .t2 {font-size:14px; line-height:14px;}
+
+  .companyHistory .histories {margin:30px auto 0;}
+  .companyHistory .histories dl {padding:0 5% 0 0;}
+
+  .companyNotice .noticeList {margin:30px auto 0;}
+  .companyNotice .noticeList > ul li {padding:15px 0;}
+  .companyNotice .noticeList > ul li .area .num {width:100px; font-size:18px;}
+  .companyNotice .noticeList > ul li .area .title {width:calc(100% - 100px); padding:0 0 0 20px; font-size:15px;}
+  .companyNotice .noticeList > ul li .area.bottom {padding:0 0 0 120px;}
+  .companyNotice .noticeList > ul li.open .area.bottom {padding:25px 0 0 120px;}
+  .companyNotice .noticeList > ul li .area .media {font-size:14px;}
+  .companyNotice .noticeList > ul li .area .link {font-size:14px;}
+
+  .companyLocation .mapArea .cons .info .disTC {padding:0 30px;}
+  .companyLocation .mapArea .cons .info .t1 {font-size:14px; line-height:18px;}
+  .companyLocation .mapArea .cons .info .t2 {font-size:28px; line-height:34px; margin:15px auto 10px;}
+  .companyLocation .mapArea .cons .info .t3 {font-size:15px; line-height:18px; margin:0 auto 15px; padding:0 0 15px 0;}
+  .companyLocation .mapArea .cons .info .t4 {font-size:14px; line-height:18px; margin:15px auto 0;}
+  .companyLocation .mapArea .cons .info .t5 {font-size:14px; line-height:18px;}
+  .companyLocation .mapArea .cons .info .t6 {font-size:14px; line-height:18px;}
+}
+
+@media screen and (max-width:768px){
+  .companyProfile .rects:not(.rectSlider) {display:none !important;}
+  .companyProfile .rectSlider {position:relative; top:auto; left:auto;}
+
+  .companyHistory .histories dl {min-height:180px;}
+  .companyHistory .histories dl dt {font-size:18px; line-height:28px;}
+  .companyHistory .histories dl dd p {font-size:14px; line-height:20px; padding:0 0 0 30px;}
+  .companyHistory .histories dl dd p span {width:30px; height:20px; line-height:20px; font-size:13px;}
+
+  .companyLocation .mapArea .cons .info {width:45%; padding-bottom:45%; margin:-22.5% 0 0 0;}
+  .companyLocation .mapArea .cons .info .t1 {font-size:12px; line-height:16px;}
+  .companyLocation .mapArea .cons .info .t2 {font-size:22px; line-height:30px;}
+  .companyLocation .mapArea .cons .info .t3 {font-size:13px; line-height:16px;;}
+  .companyLocation .mapArea .cons .info .t4 {font-size:12px; line-height:16px;}
+  .companyLocation .mapArea .cons .info .t5 {font-size:12px; line-height:16px;}
+  .companyLocation .mapArea .cons .info .t6 {font-size:12px; line-height:16px;}
+}
+
+@media screen and (max-width:640px){
+  .companyProfile .rects:not(.rectSlider) ul li {width:calc(50% - 10px); margin:0 20px 20px 0;}
+  .companyProfile .rects:not(.rectSlider) ul li:nth-of-type(4n+4) {margin:0 20px 20px 0;}
+  .companyProfile .rects:not(.rectSlider) ul li:nth-of-type(2n+2) {margin:0 0 20px 0;}
+
+  .companyHistory .histories dl {width:100%; float:none; padding:0; min-height:0; margin:0 auto 30px;}
+  .companyHistory .histories dl:last-child {margin:0 auto;}
+
+  .companyNotice .noticeList > ul li .area .num {width:60px; font-size:15px;}
+  .companyNotice .noticeList > ul li .area .title {width:calc(100% - 60px); font-size:14px;}
+  .companyNotice .noticeList > ul li .area.bottom {padding:0 0 0 80px;}
+  .companyNotice .noticeList > ul li.open .area.bottom {padding:20px 0 0 80px;}
+  .companyNotice .noticeList > ul li .area .media {font-size:13px;}
+  .companyNotice .noticeList > ul li .area .link {font-size:13px;}
+}
+
+@media screen and (max-width:560px){
+  .companyLocation .mapArea .cons .info {width:100%; height:auto; padding-bottom:0; position:relative; top:auto; left:auto; margin:0 auto;}
+  .companyLocation .mapArea .cons .info > div {position:relative; top:auto; left:auto;}
+  .companyLocation .mapArea .cons .info .disTC {padding:20px;}
+  .companyLocation .mapArea .cons .info .t1 {font-size:12px; line-height:16px;}
+  .companyLocation .mapArea .cons .info .t2 {font-size:16px; line-height:20px; margin:8px auto 5px;}
+  .companyLocation .mapArea .cons .info .t3 {font-size:13px; line-height:15px; margin:0 auto 5px; padding:0 0 12px 0;}
+  .companyLocation .mapArea .cons .info .t4 {display:inline-block; width:auto; font-size:12px; line-height:16px; margin:0 10px 0 0;}
+  .companyLocation .mapArea .cons .info .t5 {display:inline-block; width:auto; font-size:12px; line-height:16px; margin:0;}
+  .companyLocation .mapArea .cons .info .t6 {font-size:12px; line-height:16px;}
+}
+
+@media screen and (max-width:480px){
+  .companyProfile .rects:not(.rectSlider) ul li {width:100% !important; margin:0 auto 15px !important; padding:30px 0;}
+  .companyProfile .rects:not(.rectSlider) ul li:last-child {margin:0 auto !important;}
+  .companyProfile .rects ul li .t1 {font-size:18px; line-height:18px; margin:15px auto 12px; padding:0 0 12px 0;}
+  .companyProfile .rects ul li .t2 {font-size:13px; line-height:13px;}
+
+  .companyHistory .histories dl dt {font-size:16px; line-height:26px;}
+  .companyHistory .histories dl dd p {font-size:13px; line-height:18px;}
+  .companyHistory .histories dl dd p span {height:18px; line-height:18px; font-size:12px;}
+}
+/* Company 페이지 관련 영역 :: E */
+
+
+
+/* Strategy 페이지 관련 영역 :: S */
+.strategyPage {}
+.strategyPage .section {background-size:cover !important;}
+.strategyPage .section .inner {width:100%; height:100%; max-width:1300px; position:relative; margin:0 auto; box-sizing:border-box;}
+
+.strategyPage .section .typos {width:100%; position:relative; text-align:left;}
+.strategyPage .section .typos p {display:block; text-align:left; position:relative; margin:0 auto; padding:0; color:#000;}
+.strategyPage .section .typos .t1 {font-size:26px; line-height:30px; font-weight:500;}
+.strategyPage .section .typos .t2 {font-size:16px; line-height:30px; font-weight:400; margin:30px auto 0;}
+
+/*
+html body #fp-nav ul li a span,
+html body .fp-slidesNav ul li a span {background:#fff;}
+*/
+
+.strategyPage #section0 {}
+/*
+.strategyPage #section0 .circles {width:100%; position:relative; margin:60px auto 0; text-align:center;}
+.strategyPage #section0 .circles .circleSlider {width:100%; position:relative; margin:0 auto; padding:0;}
+.strategyPage #section0 .circles .swiper-slide {position:relative; z-index:3;}
+.strategyPage #section0 .circles .swiper-slide:after {display:block; content:'+'; width:20px; height:20px; font-size:20px; line-height:20px; text-align:center; font-weight:500; color:#fff; position:absolute; top:80px; right:-25px; margin:0;}
+.strategyPage #section0 .circles .swiper-slide:last-child:after {display:none;}
+.strategyPage #section0 .circles .swiper-slide > * {display:block; position:relative; text-align:center; margin:0; padding:0; box-sizing:border-box;}
+.strategyPage #section0 .circles .swiper-slide .circle {width:180px; height:180px; border-radius:50%; background:#083d5d; text-align:center; box-sizing:border-box; margin:0 auto; padding:80px 0;}
+.strategyPage #section0 .circles .swiper-slide .circle.r2 {padding:70px 0;}
+.strategyPage #section0 .circles .swiper-slide:nth-of-type(2n+2) .circle {background:#1b74aa;}
+.strategyPage #section0 .circles .swiper-slide .circle span {display:inline-block; position:relative; vertical-align:middle; font-size:15px; line-height:20px; font-weight:600; color:#fff;}
+.strategyPage #section0 .circles .swiper-slide p {font-size:12px; line-height:20px; font-weight:400; color:#fff; margin:10px auto 0; word-break:break-all;}
+
+.strategyPage #section0 .circles .arrow {display:block; width:26px; height:48px; position:absolute; top:50%; margin:-50px 0 0 0; z-index:5;}
+.strategyPage #section0 .circles .arrow img {width:100%;}
+.strategyPage #section0 .circles .arrow.prev {left:0;}
+.strategyPage #section0 .circles .arrow.next {right:0;}
+*/
+.strategyPage #section0 .circles {width:100%; position:relative; margin:60px auto 0; text-align:center; overflow:hidden;}
+.strategyPage #section0 .circles .item {display:inline-block; width:calc(20% - 4px); position:relative; z-index:3; vertical-align:top;}
+.strategyPage #section0 .circles .item:after {display:block; content:'+'; width:20px; height:20px; font-size:20px; line-height:20px; text-align:center; font-weight:500; color:#000; position:absolute; top:80px; right:-10px; margin:0;}
+.strategyPage #section0 .circles .item:last-child:after {display:none;}
+.strategyPage #section0 .circles .item > * {display:block; position:relative; text-align:center; margin:0; padding:0; box-sizing:border-box;}
+.strategyPage #section0 .circles .item .circle {width:180px; height:180px; border-radius:50%; background:#083d5d; text-align:center; box-sizing:border-box; margin:0 auto; padding:80px 0;}
+.strategyPage #section0 .circles .item .circle.r2 {padding:70px 0;}
+.strategyPage #section0 .circles .item:nth-of-type(2n+2) .circle {background:#1b74aa;}
+.strategyPage #section0 .circles .item .circle span {display:inline-block; position:relative; vertical-align:middle; font-size:15px; line-height:20px; font-weight:600; color:#fff;}
+.strategyPage #section0 .circles .item p {font-size:12px; line-height:20px; font-weight:400; color:#000; margin:10px auto 0; word-break:break-all; padding:0 10px; box-sizing:border-box;}
+.strategyPage #section0 .circles .item p.tight {line-height:16px;}
+
+
+.strategyPage #section1 {}
+/*
+.strategyPage #section1 .fundSliderWrap {width:100%; position:relative; margin:50px auto 0; padding:0 40px; box-sizing:border-box;}
+.strategyPage #section1 .fundSlider {width:100%; position:relative;}
+.strategyPage #section1 .fundSlider .swiper-slide {position:relative;}
+.strategyPage #section1 .fundSlider .swiper-slide a {display:block; width:100%; position:relative; padding:40px 30px; box-sizing:border-box; background:#fff;}
+.strategyPage #section1 .fundSlider .swiper-slide a > * {
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+}
+.strategyPage #section1 .fundSlider .swiper-slide a p {display:block; text-align:left; position:relative; margin:0; padding:0;}
+.strategyPage #section1 .fundSlider .swiper-slide a .date {font-size:13px; line-height:15px; font-weight:600; color:#777;}
+.strategyPage #section1 .fundSlider .swiper-slide a .title {font-size:20px; line-height:26px; font-weight:700; color:#000; margin:10px auto 15px;}
+.strategyPage #section1 .fundSlider .swiper-slide a .price {font-size:18px; line-height:20px; font-weight:600; color:#1b7db8;}
+.strategyPage #section1 .fundSlider .swiper-slide a .company {font-size:14px; line-height:24px; font-weight:500; color:#454545; margin:15px auto 0; padding:15px 0 0 0; border-top:1px solid #888;}
+.strategyPage #section1 .fundSlider .swiper-slide a:hover {background:#083d5d;}
+.strategyPage #section1 .fundSlider .swiper-slide a:hover .title {color:#fff;}
+.strategyPage #section1 .fundSlider .swiper-slide a:hover .company {color:#a4abd6;}
+
+.strategyPage #section1 .fundItemWrap .arrow {display:block; width:26px; height:48px; position:absolute; top:50%; margin:-24px 0 0 0;}
+.strategyPage #section1 .fundItemWrap .arrow img {width:100%;}
+.strategyPage #section1 .fundItemWrap .arrow.prev {left:0;}
+.strategyPage #section1 .fundItemWrap .arrow.next {right:0;}
+*/
+.strategyPage #section1 .fundItemWrap {width:calc(100% + 20px); position:relative; margin:50px 0 0 -10px; box-sizing:border-box; overflow:hidden; text-align:left;}
+.strategyPage #section1 .fundItemWrap .item {display:inline-block; position:relative; width:calc(25% - 22.5px); margin:0 10px 20px; box-sizing:border-box; vertical-align:top;}
+.strategyPage #section1 .fundItemWrap .item a {display:block; width:100%; position:relative; padding:40px 30px; box-sizing:border-box; background:#fff; border:1px solid #ececec; box-sizing:border-box;}
+.strategyPage #section1 .fundItemWrap .item a > * {
+transition:all 0.3s ease;
+-webkit-transition:all 0.3s ease;
+-moz-transition:all 0.3s ease;
+-o-transition:all 0.3s ease;
+-ms-transition:all 0.3s ease;
+}
+.strategyPage #section1 .fundItemWrap .item a p {display:block; text-align:left; position:relative; margin:0; padding:0;}
+.strategyPage #section1 .fundItemWrap .item a .date {font-size:13px; line-height:15px; font-weight:600; color:#777;}
+.strategyPage #section1 .fundItemWrap .item a .title {font-size:20px; line-height:26px; font-weight:700; color:#000; margin:10px auto 15px;}
+.strategyPage #section1 .fundItemWrap .item a .price {font-size:18px; line-height:20px; font-weight:600; color:#1b7db8;}
+.strategyPage #section1 .fundItemWrap .item a .company {font-size:14px; line-height:24px; font-weight:500; color:#454545; margin:15px auto 0; padding:15px 0 0 0; border-top:1px solid #888;}
+.strategyPage #section1 .fundItemWrap .item a:hover {background:#083d5d; border:1px solid #083d5d;}
+.strategyPage #section1 .fundItemWrap .item a:hover .title {color:#fff;}
+.strategyPage #section1 .fundItemWrap .item a:hover .company {color:#a4abd6;}
+
+
+@media screen and (max-width:1280px){
+  /*
+  .strategyPage #section0 .circles {margin:30px auto 0;}
+  .strategyPage #section0 .circles .swiper-slide {}
+  .strategyPage #section0 .circles .swiper-slide .circle {width:140px; height:140px; padding:60px 0;}
+  .strategyPage #section0 .circles .swiper-slide .circle.r2 {padding:50px 0;}
+  .strategyPage #section0 .circles .swiper-slide:after {top:65px; right:-25px;}
+
+  .strategyPage #section0 .circles .arrow {margin:-55px 0 0 0;}
+  */
+}
+
+@media screen and (max-width:1200px){
+  .strategyPage #section1 .fundItemWrap {}
+}
+
+@media screen and (max-width:1024px){
+  /*
+  .strategyPage #section0 .circles .swiper-slide:after {right:-15px;}
+  */
+  .strategyPage #section0 .circles .item {width:calc(33.33333333333333% - 4px); margin:0 0 10px 0;}
+  .strategyPage #section0 .circles .item:nth-child(3):after {display:none;}
+
+
+  .strategyPage #section1 .fundItemWrap .item {width:calc(33.33333333333333% - 22.5px);}
+}
+
+@media screen and (max-width:960px){
+  .strategyPage .section .inner {}
+
+  /*
+  .strategyPage #section0 .circles .swiper-slide {}
+  .strategyPage #section0 .circles .swiper-slide .circle {width:120px; height:120px; padding:50px 0;}
+  .strategyPage #section0 .circles .swiper-slide .circle.r2 {padding:40px 0;}
+  .strategyPage #section0 .circles .swiper-slide .circle span {font-size:14px;}
+  .strategyPage #section0 .circles .swiper-slide:after {top:55px;}
+  */
+}
+
+@media screen and (max-width:820px){
+  .strategyPage #section1 .fundItemWrap {}
+}
+
+@media screen and (max-width:768px){
+  .strategyPage .section .typos .t1 {font-size:20px; line-height:24px;}
+  .strategyPage .section .typos .t2 {font-size:13px; line-height:26px; margin:20px auto 0;}
+
+  /*
+  .strategyPage #section0 .circles .arrow {width:13px; height:24px; margin:-46px 0 0 0;}
+  */
+  .strategyPage #section0 .circles .item {width:calc(50% - 4px);}
+  .strategyPage #section0 .circles .item:nth-child(3):after {display:block;}
+  .strategyPage #section0 .circles .item:nth-child(2):after {display:none;}
+  .strategyPage #section0 .circles .item:nth-child(4):after {display:none;}
+
+  /*
+  .strategyPage #section1 .fundSliderWrap {}
+  .strategyPage #section1 .fundSliderWrap .arrow {width:13px; height:24px; margin:-12px 0 0 0;}
+  */
+  .strategyPage #section1 .fundItemWrap .item {width:calc(50% - 22.5px);}
+  .strategyPage #section1 .fundItemWrap .item a {padding:30px 20px;}
+  .strategyPage #section1 .fundItemWrap .item a .date {font-size:12px; line-height:14px;}
+  .strategyPage #section1 .fundItemWrap .item a .title {font-size:16px; line-height:22px;}
+  .strategyPage #section1 .fundItemWrap .item a .price {font-size:15px; line-height:17px;}
+  .strategyPage #section1 .fundItemWrap .item a .company {font-size:12px; line-height:20px; margin:10px auto 0; padding:10px 0 0 0;}
+}
+
+@media screen and (max-width:640px){
+  .strategyPage #section1 .fundItemWrap {}
+}
+
+@media screen and (max-width:560px){
+  .strategyPage #section0 .circles .swiper-slide {}
+  /*
+  .strategyPage #section0 .circles .swiper-slide .circle {width:100px; height:100px; padding:37.5px 0;}
+  .strategyPage #section0 .circles .swiper-slide .circle.r2 {width:100px; height:100px; padding:35px 0;}
+  .strategyPage #section0 .circles .swiper-slide .circle span {font-size:12px; line-height:15px;}
+  .strategyPage #section0 .circles .swiper-slide p {font-size:11px; line-height:16px; margin:8px auto 0;}
+  .strategyPage #section0 .circles .swiper-slide:after {top:40px;}
+  */
+}
+
+@media screen and (max-width:480px){
+  .strategyPage #section0 .circles {margin:30px auto 0;}
+  .strategyPage #section0 .circles .item {width:100%; margin:0 auto; padding:0 0 50px 0;}
+  .strategyPage #section0 .circles .item:after {display:block !important; top:auto; right:auto; bottom:15px; left:50%; margin:0 0 0 -10px;}
+  .strategyPage #section0 .circles .item:last-child {padding:0;}
+  .strategyPage #section0 .circles .item:last-child:after {display:none !important;}
+
+  .strategyPage #section1 .fundItemWrap {width:100%; margin:30px auto 0;}
+  .strategyPage #section1 .fundItemWrap .item {width:100%; margin:0 auto 20px;}
+}
+
+@media screen and (max-width:400px){
+  .strategyPage #section1 .fundItemWrap {}
+}
+/* Strategy 페이지 관련 영역 :: E */
+
+
+
+/* Team 페이지 관련 영역 :: S */
+.ceoProfile {}
+.ceoProfile .ceoInfo {width:100%; position:relative; margin:30px auto 0;}
+
+.ceoProfile .ceoInfo .banner {width:100%; height:439px; position:relative; background-size:cover !important;}
+.ceoProfile .ceoInfo .banner .typos {width:100%; position:absolute; bottom:0; left:0; padding:0 0 70px 25%; box-sizing:border-box;}
+.ceoProfile .ceoInfo .banner .typos p {display:block; text-align:left; position:relative; margin:0; color:#fff;}
+.ceoProfile .ceoInfo .banner .typos .name {font-size:24px; line-height:24px; font-weight:500; letter-spacing:3px;}
+.ceoProfile .ceoInfo .banner .typos .position {font-size:15px; line-height:20px; font-weight:300; margin:20px auto 0;}
+.ceoProfile .ceoInfo .info {width:100%; position:relative; margin:50px auto 0; overflow:hidden;}
+.ceoProfile .ceoInfo .info dl {display:block; float:left; position:relative; margin:0 auto 50px; padding:0; box-sizing:border-box;}
+.ceoProfile .ceoInfo .info dl:last-child {margin:0;}
+.ceoProfile .ceoInfo .info dl dt,
+.ceoProfile .ceoInfo .info dl dd {display:block; position:relative; text-align:left; margin:0; padding:0;}
+.ceoProfile .ceoInfo .info dl dt {font-size:20px; line-height:20px; font-weight:700; color:#000;}
+.ceoProfile .ceoInfo .info dl dd {margin:20px auto 0; overflow:hidden;}
+.ceoProfile .ceoInfo .info dl dd .half {width:40%; float:left; position:relative; padding:0 2.5% 0 0; box-sizing:border-box;}
+.ceoProfile .ceoInfo .info dl dd p {display:block; text-align:left; font-size:15px; line-height:25px; font-weight:400; color:#000; padding:0 0 0 10px; box-sizing:border-box; position:relative; margin:0 auto 5px;}
+.ceoProfile .ceoInfo .info dl dd p:last-child {margin:0 auto;}
+.ceoProfile .ceoInfo .info dl dd p:before {display:block; content:''; width:3px; height:3px; background:#000; position:absolute; top:11px; left:0;}
+.ceoProfile .ceoInfo .info dl:nth-child(1) {width:60%;}
+.ceoProfile .ceoInfo .info dl:nth-child(2) {width:40%; padding:0 0 0 10%;}
+/*
+.ceoProfile .ceoInfo .info dl:nth-child(3) {width:100%; margin:40px auto 0;}
+*/
+/*
+.ceoProfile .ceoInfo .info dl:nth-child(3) dd p {float:left; width:40%;}
+*/
+
+
+.teamProfile {}
+.teamProfile .searchWrap {width:100%; position:relative; margin:30px auto 0; overflow:hidden;}
+.teamProfile .searchWrap select {display:block; float:left; width:240px; height:50px; position:relative; border:0; border-bottom:1px solid #05113e; box-sizing:border-box; border-radius:0; font-size:18px; line-height:50px; font-weight:600; color:#05113e; padding:0 5px; margin:0 10px 0 0; font-family:'Noto Serif', serif !important;}
+.teamProfile .searchWrap .searchType {}
+.teamProfile .searchWrap select:last-child {margin:0;}
+.teamProfile .searchWrap .words {width:300px; height:50px; position:absolute; top:0; right:0; border-bottom:1px solid #05113e; box-sizing:border-box; display:none !important;}
+.teamProfile .searchWrap .searchWord {display:block; float:left; border:0; width:calc(100% - 50px); height:49px; line-height:49px; box-sizing:border-box; font-size:18px; font-weight:600; color:#05113e; padding:0 5px;}
+.teamProfile .searchWrap .searchBtn {display:block; width:50px; height:50px; float:left; position:relative; margin:0; padding:0; background:url('../../images/cm_icon_search_blue_1.gif') center center no-repeat;}
+
+.teamProfile .teams {width:calc(100% + 64px); position:relative; margin:50px 0 0 -32px; text-align:left;}
+.teamProfile .teamItem {display:inline-block; width:calc(33.33333333333333% - 64px); margin:0 30px 60px; position:relative; vertical-align:top;}
+.teamProfile .teamItem .thumb {display:block; width:100%; position:relative;}
+.teamProfile .teamItem .thumb img {display:none; width:100%;}
+.teamProfile .teamItem .thumb .off {display:block;}
+.teamProfile .teamItem .thumb .on {display:none;}
+.teamProfile .teamItem .thumb .desc {width:100%; position:absolute; bottom:0; left:0; padding:15px 20px; box-sizing:border-box; background:rgba(0,0,0,0.5);}
+.teamProfile .teamItem .thumb .desc p {display:block; text-align:left; position:relative; margin:0; color:#fff;}
+.teamProfile .teamItem .thumb .desc .name {font-size:15px; line-height:18px; font-weight:600;}
+.teamProfile .teamItem .thumb .desc .pos {font-size:12px; line-height:14px; font-weight:300; margin:10px auto 0;}
+
+.teamProfile .teamItem .thumb:after {display:none; content:''; width:0; height:0; position:absolute; bottom:-50px; left:50%; margin:0 0 0 -20px; border-top:none; border-bottom:20px solid #f7f7f7; border-left:20px solid transparent; border-right:20px solid transparent;}
+.teamProfile .teamItem.active .thumb:after {display:block;}
+.teamProfile .teamItem:hover .thumb .off,
+.teamProfile .teamItem.active .thumb .off {display:none;}
+.teamProfile .teamItem:hover .thumb .on,
+.teamProfile .teamItem.active .thumb .on {display:block;}
+
+/*
+.teamProfile .teamItem .pannel {width:100%; position:absolute; top:calc(100% + 50px); left:0; padding:50px 60px; box-sizing:border-box; background:#f7f7f7;}
+.teamProfile .teamItem .pannel .area {width:100%; position:relative;}
+.teamProfile .teamItem .pannel .area p {display:block; text-align:left; position:relative; color:#000;}
+.teamProfile .teamItem .pannel .area .name {font-size:28px; line-height:30px; font-weight:700;}
+.teamProfile .teamItem .pannel .area .pos {font-size:16px; line-height:20px; font-weight:300; margin:10px auto 0;}
+
+.teamProfile .teamItem .pannel .area.top {margin:0 auto 20px; padding:0 0 20px 0; border-bottom:1px solid #d4d4d4;}
+.teamProfile .teamItem .pannel .area.bottom {overflow:hidden;}
+.teamProfile .teamItem .pannel .area .status {width:50%; float:left; position:relative; text-align:left; font-size:14px; line-height:20px; font-weight:400; color:#000;}
+.teamProfile .teamItem .pannel .area .status .tit {display:block; font-size:18px; line-height:20px; font-weight:600; color:#000;}
+.teamProfile .teamItem .pannel .area .status span {display:block; font-size:13px; line-height:20px; font-weight:400; color:#333; position:relative; padding:0 0 0 8px; box-sizing:border-box;}
+.teamProfile .teamItem .pannel .area .status span:before {display:block; content:''; width:3px; height:3px; background:#333; position:absolute; top:8.5px; left:0;}
+*/
+
+
+.teamProfile .teams .pannel {width:calc(100% - 66px); position:absolute; top:0; left:30px; padding:50px 60px; box-sizing:border-box; background:#f7f7f7; display:none;}
+.teamProfile .teams .pannel.active {display:block;}
+.teamProfile .teams .pannel .area {width:100%; position:relative;}
+.teamProfile .teams .pannel .area p {display:block; text-align:left; position:relative; color:#000;}
+.teamProfile .teams .pannel .area .name {font-size:28px; line-height:30px; font-weight:700;}
+.teamProfile .teams .pannel .area .pos {font-size:16px; line-height:20px; font-weight:300; margin:10px auto 0;}
+
+.teamProfile .teams .pannel .area.top {margin:0 auto 20px; padding:0 0 20px 0; border-bottom:1px solid #d4d4d4;}
+.teamProfile .teams .pannel .area.bottom {overflow:hidden;}
+.teamProfile .teams .pannel .area .status {width:50%; float:left; position:relative; text-align:left; font-size:14px; line-height:20px; font-weight:400; color:#000;}
+.teamProfile .teams .pannel .area .status .tit {display:block; font-size:18px; line-height:20px; font-weight:600; color:#000;}
+.teamProfile .teams .pannel .area .status span {display:block; font-size:13px; line-height:20px; font-weight:400; color:#333; position:relative; padding:0 0 0 8px; box-sizing:border-box;}
+.teamProfile .teams .pannel .area .status span:before {display:block; content:''; width:3px; height:3px; background:#333; position:absolute; top:8.5px; left:0;}
+
+
+@media screen and (max-width:1024px){
+  .ceoProfile .ceoInfo .banner {height:380px;}
+
+  .teamProfile .teams {width:calc(100% + 44px); margin:30px 0 0 -22px;}
+  .teamProfile .teamItem {width:calc(33.33333333333333% - 44px); margin:0 20px 40px;}
+  .teamProfile .teams .pannel {width:calc(100% - 44px); left:20px; padding:30px;}
+  .teamProfile .teams .pannel .area .name {font-size:22px; line-height:24px;}
+  .teamProfile .teams .pannel .area .pos {font-size:14px;}
+  .teamProfile .teams .pannel .area .status .tit {font-size:15px; line-height:18px;}
+  .teamProfile .teams .pannel .area .status {font-size:13px; line-height:18px;}
+}
+
+@media screen and (max-width:960px){
+  .ceoProfile .ceoInfo .info dl {width:100% !important; float:none; padding:0 !important; margin:0 auto 40px !important;}
+  .ceoProfile .ceoInfo .info dl:last-child {margin:0 auto !important;}
+  .ceoProfile .ceoInfo .info dl dd .half {width:50%;}
+  /*
+  .ceoProfile .ceoInfo .info dl:nth-child(3) dd p {width:50%;}
+  */
+}
+
+@media screen and (max-width:768px){
+  .ceoProfile .ceoInfo .banner {height:300px;}
+  .ceoProfile .ceoInfo .banner .typos {padding:0 0 30px 15%;}
+  .ceoProfile .ceoInfo .banner .typos .name {font-size:20px; line-height:20px;}
+  .ceoProfile .ceoInfo .banner .typos .position {font-size:13px; line-height:18px; margin:15px auto 0;}
+
+  .teamProfile .searchWrap .searchType {}
+  .teamProfile .searchWrap select {width:180px;}
+  .teamProfile .searchWrap .words {width:150px;}
+
+  .ceoProfile .ceoInfo .info {margin:30px auto 0;}
+  .ceoProfile .ceoInfo .info dl {margin:0 auto 30px !important;}
+  .ceoProfile .ceoInfo .info dl:last-child {margin:0 auto !important;}
+  .ceoProfile .ceoInfo .info dl dt {font-size:18px; line-height:18px;}
+  .ceoProfile .ceoInfo .info dl dd .half {width:100%; float:none;}
+  .ceoProfile .ceoInfo .info dl dd p {font-size:14px; line-height:24px;}
+  .ceoProfile .ceoInfo .info dl dd p:before {top:10px;}
+  /*
+  .ceoProfile .ceoInfo .info dl:nth-child(3) dd p {width:100%;}
+  */
+
+  .teamProfile .teams {width:calc(100% + 34px); margin:30px 0 0 -17px;}
+  .teamProfile .teamItem {width:calc(33.33333333333333% - 34px); margin:0 15px 40px;}
+  .teamProfile .teams .pannel {width:calc(100% - 34px); left:15px;}
+}
+
+@media screen and (max-width:640px){
+  .teamProfile .searchWrap .searchType {}
+  .teamProfile .searchWrap select {height:40px; line-height:40px; font-size:16px;}
+  .teamProfile .searchWrap .words {width:180px; height:41px;}
+  .teamProfile .searchWrap .searchWord {width:calc(100% - 40px); height:40px; line-height:40px;}
+  .teamProfile .searchWrap .searchBtn {width:40px; height:40px; background-size:50%;}
+
+  .teamProfile .teams {width:calc(100% + 24px); margin:30px 0 0 -12px;}
+  .teamProfile .teamItem {width:calc(50% - 24px); margin:0 10px 40px;}
+  .teamProfile .teams .pannel {width:calc(100% - 24px); left:10px; padding:20px;}
+  .teamProfile .teams .pannel .area .name {font-size:17px; line-height:20px;}
+  .teamProfile .teams .pannel .area .pos {font-size:13px; line-height:18px; margin:8px auto 0;}
+  .teamProfile .teams .pannel .area .status .tit {font-size:14px; margin:0 auto 15px;}
+  .teamProfile .teams .pannel .area .status {font-size:12px;}
+}
+
+@media screen and (max-width:480px){
+  .ceoProfile .ceoInfo .banner {height:220px;}
+  .ceoProfile .ceoInfo .banner .typos {padding:0 0 20px 5%;}
+  .ceoProfile .ceoInfo .banner .typos .name {font-size:18px; line-height:18px;}
+  .ceoProfile .ceoInfo .banner .typos .position {font-size:12px; margin:10px auto 0;}
+
+  .teamProfile .searchWrap .searchType {}
+  .teamProfile .searchWrap select {width:125px;}
+  .teamProfile .searchWrap .words {width:150px;}
+
+  .ceoProfile .ceoInfo .info dl dt {font-size:16px; line-height:16px;}
+  .ceoProfile .ceoInfo .info dl dd p {font-size:13px; line-height:22px; padding:0 0 0 8px;}
+  .ceoProfile .ceoInfo .info dl dd p:before {width:2px; height:2px;}
+
+  .teamProfile .teams {width:100%; margin:30px auto 0;}
+  .teamProfile .teamItem {width:100%; margin:0 auto 40px;}
+  .teamProfile .teams .pannel {width:100%; left:0;}
+  .teamProfile .teams .pannel .area .status {width:100%; margin:0 auto 20px;}
+  .teamProfile .teams .pannel .area .status:last-child {margin:0 auto;}
+  .teamProfile .teams .pannel .area .status .tit {margin:0 auto 10px;}
+}
+/* Team 페이지 관련 영역 :: E */
+
+
+
+/* Stewardship 페이지 관련 영역 :: S */
+.stewardshipInfo {}
+.stewardshipInfo .titleArea {margin:0 auto; padding:0 0 30px 0; border-bottom:1px solid #000;}
+
+/*
+.stewardshipInfo .area.info {width:100%; position:relative; margin:50px auto 0;}
+.stewardshipInfo .area.info p {display:block; text-align:left; position:relative; margin:0; padding:0; color:#000;}
+.stewardshipInfo .area.info .t1 {font-size:20px; line-height:32px; font-weight:600;}
+.stewardshipInfo .area.info .t1 span {display:block; color:#083d5d;}
+.stewardshipInfo .area.info .t2 {font-size:13px; line-height:22px; font-weight:300; margin:30px auto 0;}
+*/
+
+.stewardshipInfo .stewardshipCode {width:100%; position:relative; margin:50px auto 0;}
+.stewardshipInfo .stewardshipCode p {position:relative; margin:0 auto; line-height:2.0em;}
+
+.stewardshipInfo .infoTab {width:100%; position:relative; margin:50px auto 0;}
+
+
+@media screen and (max-width:768px){
+  /*
+  .stewardshipInfo .area.info .t1 {font-size:22px; line-height:26px;}
+  .stewardshipInfo .area.info .t2 {font-size:14px; line-height:28px; margin:15px auto 0;}
+  */
+}
+
+@media screen and (max-width:480px){
+  /*
+  .stewardshipInfo .area.info .t1 {font-size:20px; line-height:24px;}
+  .stewardshipInfo .area.info .t2 {font-size:13px; line-height:26px; margin:12px auto 0;}
+  */
+}
+/* Stewardship 페이지 관련 영역 :: E */
+
+.bank-li {
+  width: calc(33% - 15px);!important;
+  margin: 0;!important;
+}
